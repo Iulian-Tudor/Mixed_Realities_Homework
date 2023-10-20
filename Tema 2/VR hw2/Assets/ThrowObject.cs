@@ -52,8 +52,8 @@ public class ThrowObject : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        Vector3 throwDirection = transform.forward; // Adjust this to change the throw direction
-        float throwForce = 10f; // Adjust this to change the throw force
+        Vector3 throwDirection = transform.forward; 
+        float throwForce = 10f; 
 
         rb.AddForce(throwDirection * throwForce, ForceMode.Impulse);
     }

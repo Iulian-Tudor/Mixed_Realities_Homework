@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     public int score = 0;
-    public TextMeshProUGUI scoreText; // Assign this in the inspector
+    public TextMeshProUGUI scoreText; 
 
     public void IncreaseScore()
     {

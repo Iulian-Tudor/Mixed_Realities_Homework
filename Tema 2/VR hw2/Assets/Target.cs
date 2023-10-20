@@ -7,15 +7,13 @@ using UnityEngine.SceneManagement;
 public class Target : MonoBehaviour
 {
     public ScoreManager scoreManager;
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Throwable")) // Make sure your thrown objects have this tag
+        if (collision.gameObject.CompareTag("Throwable"))
         {
-
             scoreManager.IncreaseScore();
-
-            Debug.Log("obj thrown");
+            Debug.Log("Object thrown");
         }
     }
-
 }
